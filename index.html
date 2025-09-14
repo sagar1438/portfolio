@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/18be398ba9.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color:#262626
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: rgb(2, 196, 196);
+        }
+
+
+        .left {
+            display: flex;
+
+            font-size: 2rem;
+        }
+
+        .s {
+            color: aqua;
+        }
+
+        .firstsection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 112px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .rightsection img {
+            width: 70%;
+            /* margin: 15px 0; */
+
+        }
+
+        .leftsection {
+            font-size: 1.995rem;
+        }
+
+        .name {
+            color: rgb(140, 244, 244);
+        }
+
+        #element {
+            color: rgb(140, 244, 244);
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(0, 0, 0);
+            height: 0.9px;
+            margin: 40px 80px;
+
+        }
+
+        .subtitle {
+            margin-left: 51px;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin: 50px;
+        }
+
+        .skills-list div {
+            background: #262626;
+            padding: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+
+        .skills-list div i {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .skills-list div h2 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .skills-list div a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .skills-list div:hover {
+            background: rgb(22, 167, 186);
+            transform: translateY(-10px);
+
+        }
+
+        .sub-titile {
+            margin-left: 51px;
+        }
+
+        .Poject-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin: 50px;
+        }
+
+        .pro {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pro img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transform: 0.5s;
+        }
+
+        .info {
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(140, 244, 244));
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 15px;
+            text-align: center;
+            font-size: 15px;
+            transition: height 0.5s;
+        }
+
+        .info h3 {
+            font-weight: 500;
+            margin-bottom: 15px;
+            margin-right: 15px;
+        }
+
+        .info a {
+            margin-top: 20px;
+            margin-right: 25px;
+            color: rgb(140, 244, 244);
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 60px;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .info p{
+            text-align: center;
+            padding-right: 20px;   
+    }
+
+        .pro:hover img {
+            transform: scale(1.1);
+        }
+
+        .pro:hover .info {
+            height: 100%;
+        }
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid aqua;
+            padding: 14px 50px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.5s ;
+        }
+        .btn:hover{
+            background-color: rgb(2, 196, 196);
+            color: black;
+        }
+        .con-sub{
+            margin-bottom: 35px;
+        }
+        .contactleft {
+            margin: 45px;
+          
+        }
+        .contactleft h1{
+            font-size: 46px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            padding: auto;
+        }
+        .contactleft{
+            flex-basis: 35%;
+                margin-top: 60px;
+
+        }
+        .contactleft p{
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        .contactleft p i{
+            color: aqua;
+            margin-right: 12px;
+            font-size: 20px;
+        }
+        
+        .contactright{
+            flex-direction: 60%;
+            margin: 45px;
+    margin-right: 90px;
+
+        }
+        .social-icon a{
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #ababab;
+            display: inline-block;
+            transition: transform 0.5s;
+        }
+         .social-icon a:hover{
+           color: aqua;
+           transform: translateY(-5px);
+        }
+        .btn.btn2{
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            font-weight: 500;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+        }
+        .btn.btn2:hover{
+            color: aqua;
+        }
+
+        .contactright form{
+            width: 100%;
+        }
+        form input, form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+        form .btn2{
+            padding: 14px 60px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .copyright{
+            background-color: #262626;
+            width: 100%;
+            text-align: center;
+            font-weight: 300;
+            /* margin-top: 10px; */
+            padding: 25px 0;
+        }
+        /* .copyright p{
+           align-items: center;
+        } */
+         /* nav ul li a.active {
+    color: aqua;
+    font-weight: bold;
+} */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="s">S</div>agar
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#secondsection">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi, my name is <span class="name">Sagar Panwar </span></div>
+                <div>And I am a passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="ph-1.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <div id="secondsection">
+            <div class="container">
+                <h1 class="subtitle">Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>JAVA</h2>
+                        <p>Proficient in object-oriented programming, with experience in building efficient and scalable applications.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                        <h2>HTML</h2>
+                        <p>Skilled at writing semantic, structured code to create clean and accessible web pages.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css"></i>
+                        <h2>CSS</h2>
+                        <p>Experienced in designing responsive, modern layouts with Flexbox and Grid for smooth user experiences.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-js"></i>
+                        <h2>JS</h2>
+                        <p>Able to add interactivity and dynamic behavior to websites using ES6+ features.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-file-code"></i>
+                        <h2>Prob-Solving</h2>
+                        <p>Strong analytical mindset, capable of breaking down complex problems into clear, workable solutions.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h2>DS</h2>
+                        <p>Knowledgeable in arrays, stacks, queues, trees, and graphs for effective coding solutions.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-diagram"></i>
+                        <h2>ALGO</h2>
+                        <p>Practical understanding of searching, sorting, recursion, and optimization techniques.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>DEV</h2>
+                        <p>Passionate about creating full-stack projects and following best practices in software engineering.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="project">
+            <div class="cotainer">
+                <h1 class="sub-titile">PROJECTS</h1>
+                <div class="Poject-list">
+                    <div class="pro">
+                        <img src="I-1.png" alt="">
+                        <div class="info">
+                            <h3>LRU-Cache</h3>
+                            <p>Implemented a Least Recently Used (LRU) cache system in Java using HashMap and Doubly Linked List to optimize memory usage and achieve O(1) time complexity for get and put operations.</p>
+
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <img src="I-2.png" alt="">
+                        <div class="info">
+                            <h3>Calculator</h3>
+                            <p>Designed a fully functional calculator using HTML, CSS, and JavaScript that supports basic arithmetic operations with a clean and responsive interface.</p>
+
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <img src="I3.png" alt="">
+                        <div class="info">
+                            <h3>To-Do-List</h3>
+                            <p>Created a dynamic to-do list web app using JavaScript that allows users to add, delete, and mark tasks as completed, with data persistence via local storage.</p>
+
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn"> See more</a>
+            </div>
+        </div>
+        <hr>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactleft">
+                        <h1 class="con-sub">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> Sagarpanwer11@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 8394852673</p>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/int_sagar_/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/sagar-panwar-255339251/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://x.com/Sagar9151"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://github.com/sagar1438"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <a href="" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contactright">
+                        <form name="submit-to-google-sheet">
+                            <input type="Text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p><i class="fa-regular fa-copyright"></i> Sagar Panwar 2025 - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Coder', 'Learner', 'Software Engineer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyTBs7VgmOXAqxWaddJIZvcXDw8fj_Q2eefZJ3EhzZSb7rovvfA4v-nYId9OVXdyJtB5Q/exec"
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
