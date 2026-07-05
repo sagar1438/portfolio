@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-paper text-ink dark:bg-dark-bg dark:text-dark-text font-body antialiased transition-colors duration-300;
+  font-feature-settings: "cv11", "ss01";
+}
+
+::selection {
+  background-color: #1e3a5f;
+  color: #f8f7f4;
+}
+
+.dark ::selection {
+  background-color: #5d7da3;
+  color: #111111;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #1e3a5f;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.dark a:focus-visible,
+.dark button:focus-visible,
+.dark input:focus-visible,
+.dark textarea:focus-visible {
+  outline-color: #5d7da3;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.reveal.in-view {
+  animation: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d6cf;
+  border-radius: 6px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
