@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Cinefy — BookMyShow",
-    period: "Apr 2026 — Mar 2026",
+    period: "Mar 2026 — Apr 2026",
     description:
       "A BookMyShow-style movie ticket booking backend that manages movies, theatres, screens, and bookings for over 10 entities under concurrent load.",
     features: [
@@ -29,23 +29,21 @@ const projects = [
     stack: ["Java", "Data Structures", "Maven", "JUnit 5", "Java Concurrency", "Git"],
     github: "https://github.com/sagar1438/LRU-CACHE",
   },
-  {
-    title: "Order Management REST API",
-    period: "JAN 2026 — FEB 2026",
+ {
+    title: "SnapMind — AI Study & Knowledge Organizer",
+    period: "June 2026 — July 2026",
     description:
-      "A layered Order Management REST API handling clients, products, orders, and order items — built to mirror a real-world order workflow with relational data modeling.",
+      "A full-stack AI-powered study organizer — upload a screenshot of notes, a code error, or an article, and it automatically extracts the text and generates a title, summary, and tags.",
     features: [
-      "15+ endpoints documented with Swagger/OpenAPI, cutting frontend integration time from 3 days to 1.5",
-      "Controller–service–repository architecture with DTO-based responses",
-      "Custom exception handling and unit tests using JUnit and Mockito",
+      "OCR text extraction plus AI-generated titles, summaries, and tags via the Google Gemini API",
+      "FastAPI + SQLite backend with 6 REST endpoints — image upload, metadata editing, keyword search, full CRUD",
+      "React frontend with gallery, search, and detail views",
     ],
-    challenge:
-      "Keeping local environments reproducible for anyone cloning the repo — solved by containerizing PostgreSQL with Docker Compose, bringing deployment setup down from 2 hours to 10 minutes at 99.9% uptime.",
-    stack: ["Java", "Spring Boot", "PostgreSQL", "Docker", "JWT", "Maven", "JUnit"],
-    github: "https://github.com/sagar1438/Order-Management-Service",
+    stack: ["React", "JavaScript", "HTML/CSS", "Python", "FastAPI", "SQLite", "EasyOCR", "Google Gemini API", "Vercel", "Render"],
+    github: "https://github.com/sagar1438/SnapMind---Ai",
   },
   {
-    title: "FaceGuard — Facial Recognition Attendance System",
+    title: "FaceTrack — Facial Recognition Attendance System",
     period: "AUG 2025 — SEP 2025",
     description:
       "A Python-based attendance system that replaces manual roll calls with real-time face detection and recognition, built for classrooms, offices, and events.",
