@@ -6,8 +6,8 @@ const achievements = [
   },
   {
     type: "Milestone",
-    title: "700+ Problems Solved",
-    detail: "Solved over 500 coding problems across LeetCode and GeeksforGeeks.",
+    title: "800+ Problems Solved",
+    detail: "Solved over 800 coding problems across LeetCode and GeeksforGeeks.",
   },
   {
     type: "Certification",

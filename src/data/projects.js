@@ -1,18 +1,18 @@
 const projects = [
   {
-    title: "Cinefy — BookMyShow",
-    period: "Mar 2026 — Apr 2026",
+    title: "PickWise — LLM Model Recommendation	Platform",
+    period: "Aug 2026 - Present",
     description:
-      "A BookMyShow-style movie ticket booking backend that manages movies, theatres, screens, and bookings for over 10 entities under concurrent load.",
+      "A full-stack AI-powered platform that analyzes project requirements and recommends the most suitable LLMs based on cost, speed, quality, and capability.",
     features: [
-      "Seat booking and locking logic with confirmation, cancellation, and payment handling",
-      "Supports 100+ concurrent users during peak load",
-      "99.9% double-booking prevention with ACID-compliant transactions",
+      "NLP-based requirement extraction and explainable model scoring using Google Gemini API",
+      "Python scoring engine evaluating 20+ AI models across multiple selection criteria",
+      "React frontend with model discovery and comparison, backed by FastAPI, REST APIs, and SQLite",
     ],
     challenge:
       "Preventing double bookings under concurrent seat selection while keeping response times under 200ms — solved with row-level seat locking and transactional integrity, and kept the API clean using DTOs, custom exception handling, and Jakarta Validation, cutting redundant code by 30%.",
-    stack: ["Java 21", "Spring Boot", "Spring Data JPA", "MySQL", "Hibernate", "Maven"],
-    github: "https://github.com/sagar1438/Cinefy-BookMyShow",
+    stack: ["React", "JavaScript", "Python", "FastAPI", "SQLite", "Google Gemini API"],
+    github: "https://github.com/sagar1438/PickWise---AI",
   },
   {
     title: "LRU Cache — Memory & Concurrent Variants",

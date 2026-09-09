@@ -2,10 +2,10 @@
 import profile from "../assets/profile.jpg";
 
 const facts = [
-  "Full Stack Developer",
-  "Solved 500+ LeetCode problems",
+  "AI-Full Stack Developer",
+  "Solved 600+ LeetCode problems",
   "Solved 200+ GFG problems",
-  "Building scalable systems",
+  "Building AI-powered applications",
 ];
 
 export default function About() {
@@ -20,21 +20,18 @@ export default function About() {
         <div className="grid md:grid-cols-[1.3fr_0.7fr] gap-14">
           <div className="space-y-6 text-base leading-relaxed text-ink/85 dark:text-dark-text/85">
             <p>
-              I&apos;m a final-year Computer Science student who enjoys the
-              craft of backend engineering — designing APIs, modeling data,
-              and reasoning about the systems underneath a good product. Most
-              of my time goes into Java and Spring Boot, but I move
-              comfortably across the stack when a project calls for it.
+              Computer Science graduate who enjoys turning ideas into practical software and intelligent applications.
+	      Focused on Python, FastAPI, React.js, REST APIs, and AI/LLM integration, with hands-on experience building
+              full-stack applications.
             </p>
             <p>
-              My areas of interest sit mainly in{" "}
+              My areas of interest sit in{" "}
               <span className="text-navy dark:text-dark-navy font-medium">
-                backend and full-stack development
+                AI/ML, Development, and Solving problems.
               </span>{" "}
-              — building things like booking systems, REST APIs, and caching
-              layers that stay correct under real-world load. I like projects
-              where performance, data integrity, and clean architecture
-              actually matter.
+              From building LLM-based systems 
+              and AI study tools to working with APIs, databases, and data structures, I enjoy creating software that is useful, efficient,
+              and built to solve real-world problems
             </p>
 
             <div className="pt-4 border-t border-line dark:border-dark-line">
@@ -53,7 +50,7 @@ export default function About() {
                 </p>
                 <p className="text-slate dark:text-dark-sub text-sm mt-2">{" "}
               <span className="text-navy dark:text-dark-navy font-medium">
-                Open to Software Engineering, Backend, and Full-Stack roles.
+                Open to Software Engineering, AI/ML, Backend, and Full-Stack roles.
               </span>{" "}
                 </p>
               </div>

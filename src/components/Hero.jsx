@@ -3,7 +3,7 @@ import GeometricMark from "./GeometricMark";
 
 // Files placed in /public are served as-is at the site root — reference
 // them as a plain string path, not an import.
-const resume = "/Sagar_Panwar_Resume.pdf";
+const resume = `${import.meta.env.BASE_URL}Sagar_Panwar_Resume.pdf`;
 
 export default function Hero() {
 
@@ -19,16 +19,14 @@ export default function Hero() {
             Hello, I&apos;m Sagar Panwar.
           </h1>
           <p className="text-lg md:text-xl text-slate dark:text-dark-sub mb-6">
-            A Full-Stack Developer building Scalable Systems.
+            Full-Stack Developer building Intelligent Applications.
           </p>
           <p className="text-base leading-relaxed text-ink/80 dark:text-dark-text/80 max-w-xl mb-10">
-            A Computer Science student who loves turning ideas into code. With a
-            strong foundation in software development and backend engineering,
-            I've built expertise in Java, Spring Boot, REST APIs, and data
-            structures through hands-on projects. From developing high-performance
-            systems to designing APIs and optimizing application performance, my
-            portfolio reflects both technical rigor and curiosity for solving
-            real-world problems
+            Computer Science graduate who enjoys turning ideas into practical software.
+            Hands-on experience in Python, FastAPI, React.js, REST APIs, and AI/LLM
+            integration, I build full-stack applications that combine clean interfaces
+            with intelligent backend systems. From developing AI-powered platforms to 
+	    designing scalable APIs and solving complex problems with data structures.
           </p>
 
           <div className="flex flex-wrap gap-4">

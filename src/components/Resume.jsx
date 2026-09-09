@@ -2,7 +2,7 @@
 
 // Files placed in /public are served as-is at the site root — reference
 // them as a plain string path, not an import.
-const resume = "/Sagar_Panwar_Resume.pdf";
+const resume = `${import.meta.env.BASE_URL}Sagar_Panwar_Resume.pdf`;
 
 export default function Resume() {
 
@@ -15,10 +15,9 @@ export default function Resume() {
 
         <div className="border border-line dark:border-dark-line p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <p className="text-base leading-relaxed text-ink/80 dark:text-dark-text/80 max-w-xl">
-            A final-year Computer Science student focused on backend and
-            full-stack development with Java and Spring Boot. My resume
-            covers my education, experience, projects, and certifications in
-            detail — feel free to view it here or take a copy with you.
+            A Computer Science student focused on AI-powered and full-stack development,
+            My My resume covers my education, experience, projects, and
+            certifications in detail — feel free to view it here or take a copy with you.
           </p>
 
           <div className="flex flex-wrap gap-4 shrink-0">
